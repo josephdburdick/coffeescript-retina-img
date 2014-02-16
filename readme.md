@@ -1,7 +1,8 @@
-Coffeescript Retina Inline IMG Swap 
+Coffeescript Retina Inline img Swap 
 =========
 
 Retina.js functionality in coffeescript
+
 
 ### Setup / Installation
 - install [Coffeescript](http://coffeescript.org/#installation)

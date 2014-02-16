@@ -6,5 +6,7 @@ if (window.devicePixelRatio > 1)
     fileName = pathSplits[pathSplits.length - 1]   # from that array grab the last slice
     fileNameSplit = fileName.split('.')            # that last slice? yeah, slice that by the period (".")
     fileNameSplit[0] += "@2x"                      # append @2x to the first slice (filename) of the new array
-    pathSplits.pop().push(fileNameSplit.join('.')) # take the original src array and replace the filename with the new filename
+    pathSplits.pop()
+    pathSplits.push(fileNameSplit.join('.')) # take the original src array and replace the filename with the new filename
     $(this).attr('src', pathSplits.join('/'))      # replace the src attribute of the image with the newly joined retina URL
+
